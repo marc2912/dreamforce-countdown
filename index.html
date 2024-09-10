@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="flip.min.js"></script>
     <title>Countdown</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flip.min.css">
 </head>
-<body>
-    <body>
-        <div class="example">
-            <div id="flipdown" class="flipdown"></div>
+<body style="background-color:#0176d3">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; width: 100vw;">
+        <h1 style="margin-bottom: 20px;">Dreamforce 2024</h1>
+        <div id="flipdown" class="flipdown flipdown__theme-dark">
         </div>
-    <script src="main.js"></script>
+    </div>
+    <script>
+        new FlipDown(1726592400).start();
+    </script>
 </body>
 </html>
